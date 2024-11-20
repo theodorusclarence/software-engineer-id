@@ -1,9 +1,12 @@
+import clsx from 'clsx';
 import { Metadata } from 'next';
 import * as React from 'react';
 
 import '@/styles/globals.css';
 // !STARTERCONF This is for demo purposes, remove @/styles/colors.css import immediately
 import '@/styles/colors.css';
+
+import { rethinkSans } from '@/lib/fonts';
 
 import { siteConfig } from '@/constant/config';
 
@@ -55,7 +58,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html>
+    <html className={clsx(['antialiased dark', rethinkSans.variable])}>
       <body>{children}</body>
     </html>
   );

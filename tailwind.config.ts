@@ -1,12 +1,15 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+const { fontFamily } = require('tailwindcss/defaultTheme');
 import type { Config } from 'tailwindcss';
-import defaultTheme from 'tailwindcss/defaultTheme';
 
 export default {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
-        primary: ['Inter', ...defaultTheme.fontFamily.sans],
+        primary: ['Inter', ...fontFamily.sans],
+        rethink: ['var(--font-rethink-sans)', ...fontFamily.sans],
       },
       colors: {
         primary: {

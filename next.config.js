@@ -17,6 +17,16 @@ const nextConfig = {
   //   ]
   // },
 
+  async redirects() {
+    return [
+      {
+        source: '/subscribe',
+        destination: 'https://softwareengineerdotid.substack.com/subscribe',
+        permanent: true,
+      },
+    ];
+  },
+
   webpack(config) {
     // Grab the existing rule that handles SVG imports
     const fileLoaderRule = config.module.rules.find((rule) =>

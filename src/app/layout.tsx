@@ -59,6 +59,16 @@ export default function RootLayout({
 }) {
   return (
     <html className={clsx(['antialiased dark', rethinkSans.variable])}>
+      <head>
+        {' '}
+        <script
+          async
+          defer
+          data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID || ''}
+          src='https://umami.thcl.dev/script.js'
+          data-domains='softwareengineer.id'
+        />
+      </head>
       <body>{children}</body>
     </html>
   );

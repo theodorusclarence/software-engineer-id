@@ -3,6 +3,8 @@
 import * as React from 'react';
 import '@/lib/env';
 
+import { trackEvent } from '@/lib/analytics';
+
 import ArrowLink from '@/components/links/ArrowLink';
 import ButtonLink from '@/components/links/ButtonLink';
 
@@ -39,6 +41,11 @@ export default function HomePage() {
               variant='light'
               className='inline-flex items-center rounded-xl shrink-0'
               href='https://ggl.link/se-indonesia'
+              onClick={() =>
+                trackEvent('Pre-launch: First Screening', {
+                  stage: 'pre-launch',
+                })
+              }
             >
               Apply for First Screening
             </ArrowLink>
@@ -47,6 +54,11 @@ export default function HomePage() {
               variant='light'
               className='inline-flex items-center rounded-xl shrink-0'
               href='https://softwareengineerdotid.substack.com/subscribe'
+              onClick={() =>
+                trackEvent('Pre-launch: Mailing List', {
+                  stage: 'pre-launch',
+                })
+              }
             >
               Get notified when we launch
             </ArrowLink>

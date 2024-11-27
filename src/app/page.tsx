@@ -33,11 +33,11 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className='flex gap-4'>
+          <div className='flex gap-4 justify-center flex-wrap mt-6 md:mt-8'>
             <ArrowLink
               as={ButtonLink}
               variant='light'
-              className='inline-flex items-center rounded-xl mt-6 md:mt-8'
+              className='inline-flex items-center rounded-xl shrink-0'
               href='https://ggl.link/se-indonesia'
             >
               Apply for First Screening
@@ -45,7 +45,7 @@ export default function HomePage() {
             <ArrowLink
               as={ButtonLink}
               variant='light'
-              className='inline-flex items-center rounded-xl mt-6 md:mt-8'
+              className='inline-flex items-center rounded-xl shrink-0'
               href='https://softwareengineerdotid.substack.com/subscribe'
             >
               Get notified when we launch

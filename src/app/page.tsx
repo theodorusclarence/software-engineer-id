@@ -33,14 +33,24 @@ export default function HomePage() {
             </p>
           </div>
 
-          <ArrowLink
-            as={ButtonLink}
-            variant='light'
-            className='inline-flex items-center rounded-xl mt-6 md:mt-8'
-            href='https://ggl.link/se-indonesia'
-          >
-            Apply for First Screening
-          </ArrowLink>
+          <div className='flex gap-4'>
+            <ArrowLink
+              as={ButtonLink}
+              variant='light'
+              className='inline-flex items-center rounded-xl mt-6 md:mt-8'
+              href='https://ggl.link/se-indonesia'
+            >
+              Apply for First Screening
+            </ArrowLink>
+            <ArrowLink
+              as={ButtonLink}
+              variant='light'
+              className='inline-flex items-center rounded-xl mt-6 md:mt-8'
+              href='https://softwareengineerdotid.substack.com/subscribe'
+            >
+              Get notified when we launch
+            </ArrowLink>
+          </div>
         </div>
       </section>
     </main>

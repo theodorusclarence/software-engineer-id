@@ -68,6 +68,11 @@ export default function RootLayout({
           src='https://umami.thcl.dev/script.js'
           data-domains='softwareengineer.id'
         />
+        <script
+          defer
+          data-site-id='softwareengineer.id'
+          src='https://assets.onedollarstats.com/tracker.js'
+        />
       </head>
       <body>{children}</body>
     </html>
